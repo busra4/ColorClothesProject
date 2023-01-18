@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/java_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color :"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/java_camera_view"
+        />
+
+    <TextView
+        android:id="@+id/text_coordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_y"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="65dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

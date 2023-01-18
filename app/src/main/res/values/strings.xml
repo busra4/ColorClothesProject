@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ColorRecg</string>
+    <string name="x_y">X: Y:</string>
+    <string name="color">Color:</string>
+</resources>
